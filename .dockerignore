@@ -1,0 +1,7 @@
+.venv
+__pycache__
+*.pyc
+agent-relay.db
+agent-relay.db-shm
+agent-relay.db-wal
+.git
