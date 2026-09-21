@@ -160,3 +160,7 @@ def test_dashboard_is_asset_and_invalid_input_is_documented_error():
         missing_name = client.post("/api/v1/agents", json={})
         assert missing_name.status_code == 400
         assert missing_name.json()["error"]["code"] == "invalid_input"
+
+
+def test_deliberately_broken():
+    assert 1 == 2, "this test is intentionally wrong, to verify CI blocks on failure"
